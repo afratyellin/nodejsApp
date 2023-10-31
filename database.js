@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-const MONGODB_URI = "mongodb://localhost/pucsd"
+const MONGODB_URI = 'mongodb://mongo:27017';
+// const MONGODB_URI = "mongodb://localhost/pucsd"
 
 mongoose.connect(MONGODB_URI,{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
   .then(() => {
